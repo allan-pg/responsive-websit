@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation{
+  min-height: 100vh;
+  background: linear-gradient(
+              rgb(29, 28, 28, 0.7),
+              rgba(29, 28, 28, 0.7),
+              rgba(29, 28, 28, 0.7)),
+              url(b4.png);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+nav img{
+  width: 50px;
+  padding-right: 20px;
+}
+.h1{
+  color: #fff;
+
+}
+.h1 span{
+  color: rgb(145, 255, 0);
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  display: inline-block;
+  padding: 0% 2%;
+  text-decoration: none;
+  position: relative;
+  text-align: right;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.5s;
+}
+.nav-links ul li a::after{
+  content: "";
+  width: 0;
+  top: 0;
+  margin: auto;
+  height: 2px;
+  background-color: rgb(247, 12, 12);
+  display: block;
+  transition: 0.3s ease-in-out;
+
+}
+.nav-links ul li a:hover::after{
+  width: 100%;
+}
+.nav-links ul li a:hover{
+  color: aqua;
+}
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 60px;
+  color: red;
+}
+.text-box p{
+  font-size: 15px;
+  margin: 10px 0 40px;
+
+}
+.hero-btn{
+  border: 1px solid red;
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  background: transparent;
+  transition: 0.7s;
+}
+.hero-btn:hover{
+  color: red;
+
+  background-color: white;
+  border: 1px solid red;
+}
+.about{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.about h1{
+  color: rgb(160, 19, 9);
+  font-size: 600;
+  font-size: 37px;
+}
+.about p{
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+.abt-container{
+  flex-basis: 30%;
+  background-color: aqua;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.abt-container:hover{
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+}
+
+@media (max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+  
+}
